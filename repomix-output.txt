@@ -1,0 +1,618 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+================================================================
+File Summary
+================================================================
+
+Purpose:
+--------
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+
+File Format:
+------------
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Multiple file entries, each consisting of:
+  a. A separator line (================)
+  b. The file path (File: path/to/file)
+  c. Another separator line
+  d. The full contents of the file
+  e. A blank line
+
+Usage Guidelines:
+-----------------
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+
+Notes:
+------
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+
+Additional Info:
+----------------
+
+================================================================
+Directory Structure
+================================================================
+data.csv
+index.html
+prompt_plan.md
+script.js
+spec.md
+style.css
+todo.md
+
+================================================================
+Files
+================================================================
+
+================
+File: data.csv
+================
+city_name,country,median_disposable_income,median_discretionary_income,languages_spoken
+New York,USA,50000,20000,English,Spanish
+Tokyo,Japan,48000,18000,Japanese
+Berlin,Germany,45000,17000,German,English
+
+================
+File: index.html
+================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Median Discretionary Income</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .definition {
+            margin-bottom: 20px;
+        }
+        .example {
+            background-color: #e9f5ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Income Types</h1>
+        
+        <div class="definition">
+            <h2>Disposable Income</h2>
+            <p>Disposable income is the amount of money that households have available for spending and saving after income taxes have been deducted. It's essentially your take-home pay after taxes.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Disposable_income" target="_blank">Learn more about disposable income on Wikipedia →</a></p>
+        </div>
+
+        <div class="definition">
+            <h2>Discretionary Income</h2>
+            <p>Discretionary income is the amount of money that remains after paying for necessities like housing, food, taxes, and other essential expenses. This is the money available for non-essential purchases, savings, and investments.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Discretionary_income" target="_blank">Learn more about discretionary income on Wikipedia →</a></p>
+        </div>
+
+        <div class="example">
+            <h3>Numeric Example</h3>
+            <p>Let's say you earn $5,000 per month (gross income):</p>
+            <ul>
+                <li>Income taxes (25%): -$1,250</li>
+                <li>Disposable income: $3,750</li>
+                <li>Essential expenses:</li>
+                <ul>
+                    <li>Rent/Mortgage: -$1,500</li>
+                    <li>Utilities: -$200</li>
+                    <li>Food: -$500</li>
+                    <li>Healthcare: -$300</li>
+                </ul>
+                <li>Discretionary income: $1,250</li>
+            </ul>
+            <p>In this example, out of $5,000 gross income, $1,250 remains as discretionary income for non-essential spending, saving, or investing.</p>
+        </div>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Disposable Income (USD)</th>
+                    <th>Discretionary Income (USD)</th>
+                    <th>Languages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be loaded dynamically -->
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
+
+================
+File: prompt_plan.md
+================
+```
+# Code-Generation Prompts for City Income Comparison Website
+
+## Prompt Set A: Project Setup
+
+### Prompt A1
+
+```text
+You are building a new GitHub repository called "city-income-comparison". Create the repository with an initial file structure. Include these files:
+- index.html (empty HTML5 boilerplate)
+- style.css (empty)
+- script.js (empty)
+- data.csv (with placeholder text "city_name,country,median_disposable_income,median_discretionary_income,languages_spoken")
+- README.md (brief description of the project)
+
+Please provide the initial commit code for these files.
+```
+
+### Prompt A2
+
+```text
+Now that we have the basic repository set up, please finalize the initial commit in GitHub. Provide the Git commands or the final file contents for each file to confirm everything is committed and pushed.
+```
+
+## Prompt Set B: Basic Page & Definitions
+
+### Prompt B1-B5
+
+```text
+We have the empty project ready. Now, update the `index.html` to have a header (`<header>`) and main (`<main>`). In the header, add the following items:
+1. Definitions for “disposable income” and “discretionary income”.
+2. A short numeric example (e.g., if you earn X, pay Y in taxes, etc. how much is left).
+3. Wikipedia links for both terms.
+
+Leave the main section empty for now. Please show the updated `index.html`.
+```
+
+## Prompt Set C: Static Table
+
+### Prompt C1-C4
+
+```text
+Now, let’s add a static table to `index.html`. Inside the `<main>` element, create a `<table>` with a `<thead>` and `<tbody>`. Include column headers: "City", "Country", "Disposable Income (USD)", "Discretionary Income (USD)", and "Languages". Add 2 or 3 static rows as placeholders.
+
+Also update `style.css` to apply:
+1. A simple alternating row background color (e.g., #f9f9f9 and #ffffff).
+2. Some basic margin or padding around the table.
+
+Please provide both the updated `index.html` and `style.css`.
+```
+
+## Prompt Set D: Data Loading & Rendering
+
+### Prompt D1-D6
+
+```text
+1. Replace the placeholder `data.csv` contents with the following (3-5 cities with actual data):
+
+city_name,country,median_disposable_income,median_discretionary_income,languages_spoken
+New York,USA,50000,20000,English,Spanish
+Tokyo,Japan,48000,18000,Japanese
+Berlin,Germany,45000,17000,German,English
+...
+
+2. In `script.js`, create a function called `fetchData()` that uses `fetch` to load `data.csv`.
+3. Parse the CSV data, then dynamically generate `<tr>` and `<td>` elements for each city row.
+4. Remove the hard-coded rows from `index.html` and instead insert rows from the script.
+5. Format the income columns with commas (e.g., 50000 => 50,000).
+6. Call `fetchData()` when the page loads.
+
+Please provide updated `data.csv`, `script.js`, and the changes to `index.html` (if any).
+```
+
+## Prompt Set E: Integrate DataTables.js
+
+### Prompt E1-E4
+
+```text
+1. Include DataTables.js via a CDN link in `index.html`.
+2. Initialize the DataTable in `script.js` after the CSV data is inserted into the table.
+3. Confirm that the table columns are sortable.
+4. Show the final updated `index.html` and `script.js` code that demonstrates DataTables integration.
+```
+
+## Prompt Set F: Language Dropdown Filter
+
+### Prompt F1-F4
+
+```text
+We want a dropdown that filters cities by language.
+1. Above the table in `index.html`, add a <select> element.
+2. Populate it dynamically with unique languages found in `data.csv` (e.g., English, Spanish, Japanese, German).
+3. When a language is selected, show only rows that contain that language in the ‘languages_spoken’ column.
+4. If no rows match, display either an empty table or a message (“No cities found”).
+
+Show your updated `index.html` and `script.js`.
+```
+
+## Prompt Set G: Highlight Highest Discretionary Income
+
+### Prompt G1-G3
+
+```text
+Now, let’s highlight the row with the highest median discretionary income.
+1. After data is loaded, find the city with the largest discretionary income value.
+2. Add a CSS class `highlight` to that row (e.g., a gold background color).
+3. Ensure only one row is highlighted.
+
+Show updated `script.js` and `style.css` with the new class.
+```
+
+## Prompt Set H: Final Styling & Fixed Header
+
+### Prompt H1-H3
+
+```text
+We want a fixed header for the table.
+1. Update the CSS so the <thead> remains visible at the top of the page when scrolling.
+2. Tweak fonts and spacing for a polished look.
+3. Show the final `style.css` changes, ensuring the rest of the table remains functional.
+```
+
+## Prompt Set I: Error Handling
+
+### Prompt I1-I3
+
+```text
+Implement error handling for CSV loading:
+1. If the CSV fetch fails, catch the error.
+2. Display a user-friendly message (e.g., “Error: Unable to load city data from CSV. Please try again later.”) inside the table area.
+3. Confirm the message is shown by simulating or describing how to trigger an error.
+
+Provide updated `script.js` with the error handling logic.
+```
+
+## Prompt Set J: Testing & Deployment
+
+### Prompt J1-J4
+
+```text
+Finally, we’ll test and deploy.
+1. Discuss how to test across multiple browsers and devices.
+2. Check the site on mobile.
+3. Enable GitHub Pages on the repository.
+4. Confirm the final URL is accessible.
+
+Show no code changes are needed, just a final summary of steps for deployment.
+```
+
+================
+File: script.js
+================
+// Format number with commas (e.g., 50000 => 50,000)
+function formatNumber(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+// Parse CSV string into array of objects
+function parseCSV(csv) {
+    const lines = csv.split('\n');
+    const headers = lines[0].split(',').map(header => header.trim());
+    
+    return lines.slice(1).map(line => {
+        // Handle commas within quoted strings
+        const values = [];
+        let inQuotes = false;
+        let currentValue = '';
+        
+        for (let char of line) {
+            if (char === '"') {
+                inQuotes = !inQuotes;
+            } else if (char === ',' && !inQuotes) {
+                values.push(currentValue.trim());
+                currentValue = '';
+            } else {
+                currentValue += char;
+            }
+        }
+        values.push(currentValue.trim());
+
+        // Create object from headers and values
+        return headers.reduce((obj, header, index) => {
+            obj[header] = values[index];
+            return obj;
+        }, {});
+    });
+}
+
+// Fetch data and populate table
+async function fetchData() {
+    try {
+        const response = await fetch('data.csv');
+        if (!response.ok) {
+            throw new Error('Failed to fetch data');
+        }
+        
+        const csvText = await response.text();
+        const data = parseCSV(csvText);
+        
+        const tbody = document.querySelector('table tbody');
+        tbody.innerHTML = ''; // Clear existing rows
+        
+        data.forEach(row => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${row['city_name']}</td>
+                <td>${row['country']}</td>
+                <td>${formatNumber(row['median_disposable_income'])}</td>
+                <td>${formatNumber(row['median_discretionary_income'])}</td>
+                <td>${row['languages_spoken']}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    } catch (error) {
+        console.error('Error loading data:', error);
+        document.querySelector('table tbody').innerHTML = `
+            <tr>
+                <td colspan="5">Error loading data. Please try again later.</td>
+            </tr>
+        `;
+    }
+}
+
+// Load data when page loads
+document.addEventListener('DOMContentLoaded', fetchData);
+
+================
+File: spec.md
+================
+# Developer Specification: City Income Comparison Website
+
+## Overview
+This project is a simple static website hosted on **GitHub Pages** that displays a table of cities with their **median disposable income** and **median discretionary income** in USD. The table is dynamically generated from a **CSV file** and provides sorting and filtering options to help users analyze the data.
+
+## Features & Requirements
+
+### 1. **Data Representation**
+- The dataset is stored as a CSV file in the GitHub repository.
+- The table includes the following columns:
+  - `city_name`: Name of the city
+  - `country`: Country where the city is located
+  - `median_disposable_income`: Median disposable income (formatted with commas for thousand separators)
+  - `median_discretionary_income`: Median discretionary income (formatted with commas for thousand separators)
+  - `languages_spoken`: A comma-separated list of languages commonly spoken in the city
+- All income values are in **USD** for consistency.
+
+### 2. **Table Functionality**
+- **Sorting**: Clicking a column header toggles sorting between ascending and descending order.
+- **Filtering**: Users can filter cities by **language** using a **single-select dropdown**.
+- **Fixed header row**: The table headers remain visible while scrolling.
+- **Highlighting the highest discretionary income city**: The city with the highest discretionary income is visually distinguished (e.g., with a gold background or bold text).
+
+### 3. **Page Layout & Styling**
+- **Definitions Section** at the top:
+  - Includes concise definitions of disposable and discretionary income.
+  - Provides **numerical examples** to clarify differences.
+  - Includes links to **Wikipedia pages** for further reading.
+- **Table Placement**:
+  - Centered with margins for readability.
+  - Alternating row colors for clarity.
+- **Minimalist Design**:
+  - No branding, logos, or unnecessary styling.
+  - Simple, readable fonts and colors.
+
+## Architecture & Implementation Details
+
+### 1. **Technology Stack**
+- **Frontend**: Vanilla HTML, CSS, JavaScript
+- **Table Interactivity**: **DataTables.js**
+- **Hosting**: GitHub Pages
+- **Data Handling**: JavaScript loads and parses the CSV file dynamically
+
+### 2. **Project Structure**
+```
+📂 project-root/
+ ├── 📄 index.html       # Main page
+ ├── 📄 style.css       # Stylesheet
+ ├── 📄 script.js       # JavaScript functionality
+ ├── 📄 data.csv        # City income dataset
+ ├── 📄 README.md       # Project documentation
+```
+
+### 3. **Data Loading & Processing**
+- The **CSV file is loaded dynamically** using JavaScript.
+- The script parses the CSV and inserts it into the HTML table.
+- **DataTables.js** enhances the table with sorting and filtering functionalities.
+- Formatting ensures income values include comma separators (e.g., `50,000`).
+
+## Error Handling Strategy
+- If the CSV file **fails to load**, display the message:
+  - *"Error: Unable to load city data from CSV. Please try again later."*
+- Ensure the site remains functional even if the dataset is incomplete.
+- Provide a fallback message if no data matches the selected language filter.
+
+## Maintenance & Updates
+- **Manual Updates**:
+  - The CSV file will be manually updated when new data is available.
+  - No automated versioning or change tracking is required.
+- **No Automated Testing or CI/CD**:
+  - No automated validation of the CSV format before deployment.
+  - Developers will manually verify updates before pushing them.
+
+## Testing Plan
+
+### 1. **Functional Testing**
+- Verify that the **table loads correctly** with all city data.
+- Confirm that **sorting works** correctly for each column.
+- Test **language filtering** to ensure only matching cities are displayed.
+- Ensure that the city with the **highest discretionary income is highlighted**.
+- Validate that the **fixed header remains visible** while scrolling.
+
+### 2. **Error Handling Testing**
+- Temporarily remove or corrupt the CSV file and confirm the **error message appears**.
+- Test for empty search results when filtering by a language that is not in the dataset.
+
+### 3. **Cross-Browser Testing**
+- Verify compatibility in **Chrome, Firefox, Edge, and Safari**.
+- Ensure the table functions correctly on **desktop and mobile devices**.
+
+## Deployment
+- The site will be hosted using **GitHub Pages**.
+- Any updates to the CSV file, HTML, CSS, or JavaScript will be reflected immediately after pushing changes to the repository.
+
+================
+File: style.css
+================
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Responsive table */
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+================
+File: todo.md
+================
+# TODO Checklist for City Income Comparison Website
+
+## ✅ Project Setup
+- [x] Create GitHub repository: `city-income-comparison`
+- [x] Initialize the repository with the following files:
+  - [x] `index.html` (empty HTML5 boilerplate)
+  - [x] `style.css` (empty)
+  - [x] `script.js` (empty)
+  - [x] `data.csv` (placeholder content)
+  - [x] `README.md` (brief project description)
+- [x] Commit and push initial setup to GitHub
+
+## ✅ Basic Page & Definitions
+- [ ] Add `<header>` and `<main>` sections in `index.html`
+- [ ] Include definitions for “disposable income” and “discretionary income”
+- [ ] Provide a numeric example of income calculation
+- [ ] Insert Wikipedia links for further reference
+- [ ] Commit and push changes
+
+## ✅ Static Table
+- [ ] Add a `<table>` inside `<main>`
+- [ ] Define table headers: City, Country, Disposable Income (USD), Discretionary Income (USD), Languages
+- [ ] Add 2-3 static placeholder rows
+- [ ] Apply basic styling in `style.css`:
+  - [ ] Alternating row background colors
+  - [ ] Padding and margin adjustments
+- [ ] Commit and push changes
+
+## ✅ Data Loading & Rendering
+- [ ] Replace placeholder `data.csv` with real city income data
+- [ ] Write `fetchData()` in `script.js` to:
+  - [ ] Fetch `data.csv`
+  - [ ] Parse CSV data
+  - [ ] Generate `<tr>` and `<td>` elements dynamically
+  - [ ] Remove static rows from `index.html`
+  - [ ] Format income columns with comma separators
+  - [ ] Ensure function runs on page load
+- [ ] Commit and push changes
+
+## ✅ Integrate DataTables.js
+- [ ] Include DataTables.js via CDN in `index.html`
+- [ ] Initialize DataTables after table data is loaded
+- [ ] Confirm sorting works on all columns
+- [ ] Commit and push changes
+
+## ✅ Language Dropdown Filter
+- [ ] Add `<select>` dropdown above the table
+- [ ] Populate dropdown dynamically with unique languages from `data.csv`
+- [ ] Implement filtering in `script.js` to show only matching cities
+- [ ] Handle edge cases:
+  - [ ] No matching rows should display “No cities found”
+- [ ] Commit and push changes
+
+## ✅ Highlight Highest Discretionary Income
+- [ ] Identify the city with the highest discretionary income
+- [ ] Add a CSS class (`highlight`) to the highest value row
+- [ ] Apply styling (e.g., gold background)
+- [ ] Commit and push changes
+
+## ✅ Final Styling & Fixed Header
+- [ ] Ensure table header remains fixed when scrolling
+- [ ] Adjust font styles, spacing, and readability improvements
+- [ ] Commit and push final styling updates
+
+## ✅ Error Handling
+- [ ] Wrap `fetchData()` in error handling
+- [ ] Display a user-friendly error message if CSV fails to load
+- [ ] Test error message by simulating a failed fetch
+- [ ] Commit and push error-handling changes
+
+## ✅ Testing & Deployment
+- [ ] Test functionality in multiple browsers (Chrome, Firefox, Safari, Edge)
+- [ ] Verify mobile responsiveness
+- [ ] Enable GitHub Pages for deployment
+- [ ] Confirm website is accessible at the GitHub Pages URL
+- [ ] Final commit and push
+
+## ✅ Final Review
+- [ ] Conduct a full project walkthrough
+- [ ] Verify sorting, filtering, and styling work correctly
+- [ ] Ensure README.md includes project instructions and acknowledgments
+- [ ] Submit project for final approval or review
+
+
+
+================================================================
+End of Codebase
+================================================================

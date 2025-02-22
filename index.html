@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Median Discretionary Income</title>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .definition {
+            margin-bottom: 20px;
+        }
+        .example {
+            background-color: #e9f5ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        .filter-section {
+            margin-bottom: 20px;
+        }
+        .filter-section label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .filter-section select {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            min-width: 200px;
+        }
+        .filter-section select:focus {
+            outline: none;
+            border-color: #4a90e2;
+            box-shadow: 0 0 3px rgba(74, 144, 226, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Income Types</h1>
+        
+        <div class="definition">
+            <h2>Disposable Income</h2>
+            <p>Disposable income is the amount of money that households have available for spending and saving after income taxes have been deducted. It's essentially your take-home pay after taxes.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Disposable_income" target="_blank">Learn more about disposable income on Wikipedia →</a></p>
+        </div>
+        <div class="definition">
+            <h2>Discretionary Income</h2>
+            <p>Discretionary income is the amount of money that remains after paying for necessities like housing, food, taxes, and other essential expenses. This is the money available for non-essential purchases, savings, and investments.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Discretionary_income" target="_blank">Learn more about discretionary income on Wikipedia →</a></p>
+        </div>
+        <div class="example">
+            <h3>Numeric Example</h3>
+            <p>Let's say you earn $5,000 per month (gross income):</p>
+            <ul>
+                <li>Income taxes (25%): -$1,250</li>
+                <li>Disposable income: $3,750</li>
+                <li>Essential expenses:</li>
+                <ul>
+                    <li>Rent/Mortgage: -$1,500</li>
+                    <li>Utilities: -$200</li>
+                    <li>Food: -$500</li>
+                    <li>Healthcare: -$300</li>
+                </ul>
+                <li>Discretionary income: $1,250</li>
+            </ul>
+            <p>In this example, out of $5,000 gross income, $1,250 remains as discretionary income for non-essential spending, saving, or investing.</p>
+        </div>
+    </header>
+    <main>
+        <div class="filter-section">
+            <label for="languageFilter">Filter by Language:</label>
+            <select id="languageFilter">
+                <option value="">All Languages</option>
+                <!-- Languages will be populated dynamically -->
+            </select>
+        </div>
+        <table id="incomeTable">
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Disposable Income (USD)</th>
+                    <th>Discretionary Income (USD)</th>
+                    <th>Languages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be loaded dynamically -->
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
