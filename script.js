@@ -42,8 +42,11 @@ function parseCSV(csv) {
 function getUniqueLanguages(data) {
     const languagesSet = new Set();
     data.forEach(row => {
-        const languages = row['languages_spoken'].split(';').map(lang => lang.trim());
-        languages.forEach(lang => languagesSet.add(lang));
+        // Split by both comma and semicolon to handle different separators
+        const languages = row['languages_spoken'].split(/[,;]/).map(lang => lang.trim());
+        languages.forEach(lang => {
+            if (lang) languagesSet.add(lang);
+        });
     });
     return Array.from(languagesSet).sort();
 }
@@ -64,9 +67,10 @@ function filterByLanguage(language) {
     if (!language) {
         return globalData;
     }
-    return globalData.filter(row => 
-        row['languages_spoken'].split(';').map(lang => lang.trim()).includes(language)
-    );
+    return globalData.filter(row => {
+        const languages = row['languages_spoken'].split(/[,;]/).map(lang => lang.trim());
+        return languages.includes(language);
+    });
 }
 
 // Update table with filtered data
@@ -111,7 +115,7 @@ function updateTable(filteredData) {
     // Reinitialize DataTable
     dataTable = $('#incomeTable').DataTable({
         "order": [],
-        "pageLength": 10,
+        "pageLength": 50,
         "columnDefs": [
             { "orderable": true, "targets": "_all" },
             { 
