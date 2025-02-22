@@ -87,8 +87,17 @@ function updateTable(filteredData) {
         return;
     }
 
+    // Find the highest discretionary income
+    const highestDiscretionary = Math.max(...filteredData.map(row => 
+        parseInt(row['median_discretionary_income'])
+    ));
+
     filteredData.forEach(row => {
         const tr = document.createElement('tr');
+        // Add highlight class if this row has the highest discretionary income
+        if (parseInt(row['median_discretionary_income']) === highestDiscretionary) {
+            tr.classList.add('highlight');
+        }
         tr.innerHTML = `
             <td>${row['city_name']}</td>
             <td>${row['country']}</td>
