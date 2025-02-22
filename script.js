@@ -62,6 +62,25 @@ function populateLanguageDropdown(languages) {
     });
 }
 
+// Assign ranks based on discretionary income
+function assignRanks(data) {
+    // Create a copy of the data and sort by discretionary income
+    const sortedData = [...data].sort((a, b) => 
+        parseInt(b['median_discretionary_income']) - parseInt(a['median_discretionary_income'])
+    );
+    
+    // Assign ranks and store in original data objects
+    sortedData.forEach((item, index) => {
+        const originalItem = data.find(d => 
+            d.city_name === item.city_name && 
+            d.country === item.country
+        );
+        originalItem.rank = index + 1;
+    });
+    
+    return data;
+}
+
 // Filter data by selected language
 function filterByLanguage(language) {
     if (!language) {
@@ -85,7 +104,7 @@ function updateTable(filteredData) {
     if (filteredData.length === 0) {
         tbody.innerHTML = `
             <tr>
-                <td colspan="5">No cities found for the selected language.</td>
+                <td colspan="6">No cities found for the selected language.</td>
             </tr>
         `;
         return;
@@ -103,6 +122,7 @@ function updateTable(filteredData) {
             tr.classList.add('highlight');
         }
         tr.innerHTML = `
+            <td>${row.rank}</td>
             <td>${row['city_name']}</td>
             <td>${row['country']}</td>
             <td>${formatNumber(row['median_disposable_income'])}</td>
@@ -119,7 +139,7 @@ function updateTable(filteredData) {
         "columnDefs": [
             { "orderable": true, "targets": "_all" },
             { 
-                "targets": [2, 3],
+                "targets": [3, 4],
                 "render": function(data, type) {
                     return type === 'sort' ? 
                         parseFloat(data.replace(/,/g, '')) : 
@@ -141,6 +161,9 @@ async function fetchData() {
         const csvText = await response.text();
         globalData = parseCSV(csvText);
         
+        // Assign ranks based on discretionary income
+        globalData = assignRanks(globalData);
+        
         // Populate language dropdown
         const languages = getUniqueLanguages(globalData);
         populateLanguageDropdown(languages);
@@ -158,7 +181,7 @@ async function fetchData() {
         console.error('Error loading data:', error);
         document.querySelector('table tbody').innerHTML = `
             <tr>
-                <td colspan="5">Error loading data. Please try again later.</td>
+                <td colspan="6">Error loading data. Please try again later.</td>
             </tr>
         `;
     }
