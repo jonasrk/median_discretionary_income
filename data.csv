@@ -1,101 +1,100 @@
 city_name,country,median_disposable_income,median_discretionary_income,languages_spoken
-San Francisco,USA,85000,28000,"English"
-Doha,Qatar,60000,26000,"Arabic,English"
-Dubai,UAE,58000,25000,"Arabic,English"
-Kuwait City,Kuwait,58000,25000,"Arabic,English"
-Zurich,Switzerland,75000,25000,"German,French,Italian,English"
-Abu Dhabi,UAE,56000,24000,"Arabic,English"
-Geneva,Switzerland,72000,24000,"French,English,German"
-Seattle,USA,72000,24000,"English"
-Basel,Switzerland,70000,23500,"German,French,English"
-Lausanne,Switzerland,68000,23000,"French,German,English"
-Los Angeles,USA,70000,23000,"English,Spanish"
-Manama,Bahrain,52000,22000,"Arabic,English"
-New York City,USA,65000,22000,"English"
-Boston,USA,62000,21000,"English"
-Oslo,Norway,60000,21000,"Norwegian,English"
-Austin,USA,59000,20000,"English,Spanish"
-Copenhagen,Denmark,58000,20000,"Danish,English"
-Muscat,Oman,48000,20000,"Arabic,English"
-Bergen,Norway,56000,19500,"Norwegian,English"
-Chicago,USA,58000,19000,"English"
-Denver,USA,56000,19000,"English"
-Riyadh,Saudi Arabia,45000,19000,"Arabic,English"
-Sydney,Australia,54000,19000,"English"
-London,UK,55000,18000,"English"
-Perth,Australia,51000,18000,"English"
-Portland,USA,54000,18500,"English"
-Melbourne,Australia,52000,18500,"English"
-Toronto,Canada,51000,18000,"English,French"
-Stockholm,Sweden,49000,17500,"Swedish,English"
-Miami,USA,52000,17500,"English,Spanish"
-Calgary,Canada,50000,17500,"English,French"
-Jeddah,Saudi Arabia,42000,17500,"Arabic,English"
-Singapore,Singapore,52000,17000,"English,Mandarin,Malay,Tamil"
-Vancouver,Canada,49000,17000,"English,French"
-Munich,Germany,48000,17000,"German"
-Ottawa,Canada,48000,17000,"English,French"
-Amsterdam,Netherlands,47000,16800,"Dutch,English"
-Berlin,Germany,45000,16500,"German"
-Edmonton,Canada,47000,16500,"English,French"
-Gothenburg,Sweden,46000,16500,"Swedish,English"
-Helsinki,Finland,46000,16500,"Finnish,Swedish"
-Auckland,New Zealand,47000,16500,"English,Maori"
-Montreal,Canada,47000,16500,"English,French"
-Paris,France,48000,16000,"French"
-Vienna,Austria,46000,16000,"German"
-Dublin,Ireland,48000,16000,"English,Irish"
-Wellington,New Zealand,45000,16000,"English,Maori"
-Hamburg,Germany,44000,15500,"German"
-Edinburgh,UK,44000,15500,"English"
-Christchurch,New Zealand,43000,15500,"English,Maori"
-Quebec City,Canada,44000,15500,"French,English"
-Malmö,Sweden,44000,15500,"Swedish,English"
-Hong Kong,China,49000,15000,"Cantonese,English,Mandarin"
-Tokyo,Japan,42000,15000,"Japanese"
-Rotterdam,Netherlands,43000,15000,"Dutch,English"
-Brussels,Belgium,44000,15000,"Dutch,French,German"
-Tel Aviv,Israel,44000,15000,"Hebrew,English"
-Manchester,UK,42000,14500,"English"
-Lyon,France,42000,14500,"French"
-Glasgow,UK,41000,14000,"English"
-Tel Aviv,Israel,42000,14000,"Hebrew,English"
-Jerusalem,Israel,40000,13500,"Hebrew,Arabic,English"
-Marseille,France,38000,13000,"French"
-Haifa,Israel,38000,13000,"Hebrew,Arabic,English"
-Osaka,Japan,38000,13000,"Japanese"
-Milan,Italy,36000,12500,"Italian"
-Kyoto,Japan,36000,12500,"Japanese"
-Seoul,South Korea,38000,12000,"Korean"
-Madrid,Spain,35000,12000,"Spanish"
-Busan,South Korea,34000,11500,"Korean"
-Barcelona,Spain,34000,11500,"Spanish,Catalan"
-Rome,Italy,33000,11000,"Italian"
-Lisbon,Portugal,28000,9500,"Portuguese"
-Ljubljana,Slovenia,28000,9500,"Slovenian"
-Prague,Czech Republic,27000,9000,"Czech"
-Tallinn,Estonia,26000,9000,"Estonian,Russian"
-Warsaw,Poland,25000,8500,"Polish"
-Zagreb,Croatia,25000,8500,"Croatian"
-Moscow,Russia,25000,8000,"Russian"
-Shanghai,China,25000,8000,"Mandarin"
-Budapest,Hungary,24000,8000,"Hungarian"
-Riga,Latvia,24000,8000,"Latvian,Russian"
-Shenzhen,China,24000,7500,"Mandarin"
-Bucharest,Romania,23000,7500,"Romanian"
-Kuala Lumpur,Malaysia,22000,7500,"Malay,English"
-Guangzhou,China,22000,7000,"Mandarin,Cantonese"
-Athens,Greece,22000,7000,"Greek"
-Santiago,Chile,20000,6500,"Spanish"
-Belgrade,Serbia,18000,6000,"Serbian"
-Beijing,China,20000,6000,"Mandarin"
-Cape Town,South Africa,18000,5500,"English,Afrikaans,Xhosa"
-Mexico City,Mexico,18000,5000,"Spanish"
-Istanbul,Turkey,15000,4500,"Turkish"
-São Paulo,Brazil,15000,4500,"Portuguese"
-Bangkok,Thailand,14000,4000,"Thai"
-Buenos Aires,Argentina,14000,4000,"Spanish"
-Mumbai,India,12000,3500,"Hindi,Marathi,English"
-Jakarta,Indonesia,12000,3500,"Indonesian"
-Kiev,Ukraine,12000,3500,"Ukrainian,Russian"
-Manila,Philippines,10000,2800,"Filipino,English"
+San Francisco,USA,"97,856","-1,119",English
+Doha,Qatar,"34,970","15,471","Arabic,English"
+Dubai,UAE,"56,360","15,308","Arabic,English"
+Kuwait City,Kuwait,"64,400","17,992","Arabic,English"
+Zurich,Switzerland,"91,080","20,407","German,French,Italian,English"
+Abu Dhabi,UAE,"56,360","16,988","Arabic,English"
+Geneva,Switzerland,"91,080","18,979","French,English,German"
+Seattle,USA,"90,763","2,143",English
+Basel,Switzerland,"91,080","19,899","German,French,English"
+Lausanne,Switzerland,"91,080","20,012","French,German,English"
+Los Angeles,USA,"67,469","4,229","English,Spanish"
+Manama,Bahrain,"58,070","14,810","Arabic,English"
+New York City,USA,"65,971","1,171",English
+Boston,USA,"70,478","2,018",English
+Oslo,Norway,"55,752","14,952","Norwegian,English"
+Austin,USA,"65,299","8,299","English,Spanish"
+Copenhagen,Denmark,"49,850","12,170","Danish,English"
+Muscat,Oman,"35,000","14,500","Arabic,English"
+Bergen,Norway,"55,752","15,452","Norwegian,English"
+Chicago,USA,"58,992","9,192",English
+Denver,USA,"61,845","8,805",English
+Riyadh,Saudi Arabia,"64,598","18,561","Arabic,English"
+Sydney,Australia,"52,296","9,816",English
+London,UK,"45,486","6,006",English
+Perth,Australia,"52,296","11,256",English
+Portland,USA,"60,150","9,150",English
+Melbourne,Australia,"52,296","10,176",English
+Toronto,Canada,"45,345","5,865","English,French"
+Stockholm,Sweden,"44,638","11,878","Swedish,English"
+Miami,USA,"55,400","5,000","English,Spanish"
+Calgary,Canada,"45,345","8,145","English,French"
+Jeddah,Saudi Arabia,"64,598","19,898","Arabic,English"
+Singapore,Singapore,"61,500","10,260","English,Mandarin,Malay,Tamil"
+Vancouver,Canada,"45,345","4,305","English,French"
+Munich,Germany,"51,700","13,852",German
+Ottawa,Canada,"45,345","9,585","English,French"
+Amsterdam,Netherlands,"50,920","8,740","Dutch,English"
+Berlin,Germany,"51,700","12,940",German
+Edmonton,Canada,"45,345","9,945","English,French"
+Gothenburg,Sweden,"44,638","12,518","Swedish,English"
+Helsinki,Finland,"45,700","11,500","Finnish,Swedish"
+Auckland,New Zealand,"39,937","6,337","English,Maori"
+Montreal,Canada,"45,345","10,905","English,French"
+Paris,France,"48,072","7,872",French
+Vienna,Austria,"51,136","14,536",German
+Dublin,Ireland,"42,826","5,386","English,Irish"
+Wellington,New Zealand,"39,937","7,417","English,Maori"
+Hamburg,Germany,"51,700","13,420",German
+Edinburgh,UK,"45,486","7,806",English
+Christchurch,New Zealand,"39,937","8,737","English,Maori"
+Quebec City,Canada,"45,345","12,225","French,English"
+Malmö,Sweden,"44,638","13,438","Swedish,English"
+Hong Kong,China,"48,500","7,940","Cantonese,English,Mandarin"
+Tokyo,Japan,"38,010","9,210",Japanese
+Rotterdam,Netherlands,"50,920","10,480","Dutch,English"
+Brussels,Belgium,"49,749","10,509","Dutch,French,German"
+Tel Aviv,Israel,"39,500","4,820","Hebrew,English"
+Manchester,UK,"45,486","10,686",English
+Lyon,France,"48,072","10,872",French
+Glasgow,UK,"45,486","11,886",English
+Jerusalem,Israel,"39,500","6,020","Hebrew,Arabic,English"
+Marseille,France,"48,072","11,472",French
+Haifa,Israel,"39,500","8,300","Hebrew,Arabic,English"
+Osaka,Japan,"38,010","10,410",Japanese
+Milan,Italy,"43,390","8,590",Italian
+Kyoto,Japan,"38,010","10,810",Japanese
+Seoul,South Korea,"35,083","7,483",Korean
+Madrid,Spain,"39,965","13,565",Spanish
+Busan,South Korea,"35,083","9,883",Korean
+Barcelona,Spain,"39,965","12,765","Spanish,Catalan"
+Rome,Italy,"43,390","9,790",Italian
+Lisbon,Portugal,"36,242","12,642",Portuguese
+Ljubljana,Slovenia,"35,273","14,073",Slovenian
+Prague,Czech Republic,"38,146","15,746",Czech
+Tallinn,Estonia,"30,354","11,754","Estonian,Russian"
+Warsaw,Poland,"33,089","14,489",Polish
+Zagreb,Croatia,"25,000","9,400",Croatian
+Moscow,Russia,"18,000","5,400",Russian
+Shanghai,China,"6,930","1,530",Mandarin
+Budapest,Hungary,"33,330","13,530",Hungarian
+Riga,Latvia,"25,883","9,683","Latvian,Russian"
+Shenzhen,China,"6,930","1,650",Mandarin
+Bucharest,Romania,"19,500","7,620",Romanian
+Kuala Lumpur,Malaysia,"12,500","5,300","Malay,English"
+Guangzhou,China,"6,930","2,130","Mandarin,Cantonese"
+Athens,Greece,"31,164","10,124",Greek
+Santiago,Chile,"23,899","8,299",Spanish
+Belgrade,Serbia,"12,000","4,200",Serbian
+Beijing,China,"6,930","1,290",Mandarin
+Cape Town,South Africa,"7,200",360,"English,Afrikaans,Xhosa"
+Mexico City,Mexico,"9,800",188,Spanish
+Istanbul,Turkey,"8,900",108,Turkish
+São Paulo,Brazil,"8,500",250,Portuguese
+Bangkok,Thailand,"7,500",300,Thai
+Buenos Aires,Argentina,"6,500",-285,Spanish
+Mumbai,India,"3,300",-552,"Hindi,Marathi,English"
+Jakarta,Indonesia,"4,450",-782,Indonesian
+Kiev,Ukraine,"4,000",400,"Ukrainian,Russian"
+Manila,Philippines,"4,200",-840,"Filipino,English"
