@@ -4,56 +4,95 @@ let dataTable;
 
 // Format number with commas (e.g., 50000 => 50,000)
 function formatNumber(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    if (number === undefined || number === null || number === '') {
+        return '';
+    }
+    const str = number.toString();
+    if (!str) return '';
+    return str.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
 // Parse CSV string into array of objects
 function parseCSV(csv) {
+    console.log('[parseCSV] raw length:', csv?.length);
     const lines = csv.split('\n');
-    const headers = lines[0].split(',').map(header => header.trim());
+    console.log('[parseCSV] total lines:', lines.length);
+    // Normalize headers and strip any BOM on first header
+    let headers = lines[0].split(',').map(header => header.trim());
+    if (headers.length > 0) {
+        headers[0] = headers[0].replace(/^\uFEFF/, '');
+    }
+    console.log('[parseCSV] headers:', headers);
     
-    return lines.slice(1).map(line => {
-        // Handle commas within quoted strings
-        const values = [];
-        let inQuotes = false;
-        let currentValue = '';
-        
-        for (let char of line) {
-            if (char === '"') {
-                inQuotes = !inQuotes;
-            } else if (char === ',' && !inQuotes) {
-                values.push(currentValue.trim());
-                currentValue = '';
-            } else {
-                currentValue += char;
+    const rows = lines.slice(1)
+        .filter(line => line.trim() !== '')
+        .map((line, idx) => {
+            // Handle commas within quoted strings
+            const values = [];
+            let inQuotes = false;
+            let currentValue = '';
+            
+            for (let char of line) {
+                if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    values.push(currentValue.trim());
+                    currentValue = '';
+                } else {
+                    currentValue += char;
+                }
             }
-        }
-        values.push(currentValue.trim());
-        
-        // Create object from headers and values
-        return headers.reduce((obj, header, index) => {
-            obj[header] = values[index];
-            return obj;
-        }, {});
-    });
+            values.push(currentValue.trim());
+            
+            if (values.length !== headers.length) {
+                console.warn('[parseCSV] values/header length mismatch at row', idx + 2, 'values:', values, 'line:', line);
+            }
+
+            // Create object from headers and values
+            const rowObject = headers.reduce((obj, header, index) => {
+                obj[header] = values[index] !== undefined ? values[index] : '';
+                return obj;
+            }, {});
+
+            // Ensure expected fields exist even if CSV row was short
+            if (rowObject['languages_spoken'] === undefined) rowObject['languages_spoken'] = '';
+            if (rowObject['median_disposable_income'] === undefined) rowObject['median_disposable_income'] = '';
+            if (rowObject['median_discretionary_income'] === undefined) rowObject['median_discretionary_income'] = '';
+            return rowObject;
+        });
+
+    console.log('[parseCSV] parsed rows:', rows.length, rows[0]);
+    return rows;
 }
 
 // Get unique languages from the data
 function getUniqueLanguages(data) {
+    console.log('[getUniqueLanguages] input rows:', data?.length);
     const languagesSet = new Set();
-    data.forEach(row => {
+    data.forEach((row, idx) => {
         // Split by both comma and semicolon to handle different separators
-        const languages = row['languages_spoken'].split(/[,;]/).map(lang => lang.trim());
+        const spoken = row && row['languages_spoken'];
+        if (spoken === undefined) {
+            console.warn('[getUniqueLanguages] languages_spoken undefined at index', idx, row);
+        }
+        const languages = (spoken ? String(spoken) : '').split(/[,;]/).map(lang => lang.trim());
         languages.forEach(lang => {
             if (lang) languagesSet.add(lang);
         });
     });
-    return Array.from(languagesSet).sort();
+    const list = Array.from(languagesSet).sort();
+    console.log('[getUniqueLanguages] unique languages count:', list.length, list);
+    return list;
 }
 
 // Populate language dropdown
 function populateLanguageDropdown(languages) {
+    console.log('[populateLanguageDropdown] populating', languages.length, 'languages');
     const dropdown = document.getElementById('languageFilter');
+    if (!dropdown) {
+        console.warn('[populateLanguageDropdown] #languageFilter not found');
+        return;
+    }
     languages.forEach(language => {
         const option = document.createElement('option');
         option.value = language;
@@ -64,9 +103,10 @@ function populateLanguageDropdown(languages) {
 
 // Assign ranks based on discretionary income
 function assignRanks(data) {
+    console.log('[assignRanks] input rows:', data?.length);
     // Create a copy of the data and sort by discretionary income
     const sortedData = [...data].sort((a, b) => 
-        parseInt(b['median_discretionary_income']) - parseInt(a['median_discretionary_income'])
+        (parseInt(b['median_discretionary_income']) || 0) - (parseInt(a['median_discretionary_income']) || 0)
     );
     
     // Assign ranks and store in original data objects
@@ -75,30 +115,43 @@ function assignRanks(data) {
             d.city_name === item.city_name && 
             d.country === item.country
         );
-        originalItem.rank = index + 1;
+        if (originalItem) {
+            originalItem.rank = index + 1;
+        }
     });
+    console.log('[assignRanks] top row:', data[0]);
     
     return data;
 }
 
 // Filter data by selected language
 function filterByLanguage(language) {
+    console.log('[filterByLanguage] selected language:', language);
     if (!language) {
         return globalData;
     }
-    return globalData.filter(row => {
-        const languages = row['languages_spoken'].split(/[,;]/).map(lang => lang.trim());
+    const filtered = globalData.filter(row => {
+        const spoken = row['languages_spoken'];
+        const languages = (spoken ? String(spoken) : '').split(/[,;]/).map(lang => lang.trim());
         return languages.includes(language);
     });
+    console.log('[filterByLanguage] filtered count:', filtered.length);
+    return filtered;
 }
 
 // Update table with filtered data
 function updateTable(filteredData) {
+    console.log('[updateTable] rendering rows:', filteredData.length);
     if (dataTable) {
+        console.log('[updateTable] destroying previous DataTable instance');
         dataTable.destroy();
     }
 
     const tbody = document.querySelector('table tbody');
+    if (!tbody) {
+        console.warn('[updateTable] table tbody not found');
+        return;
+    }
     tbody.innerHTML = '';
 
     if (filteredData.length === 0) {
@@ -112,27 +165,32 @@ function updateTable(filteredData) {
 
     // Find the highest discretionary income
     const highestDiscretionary = Math.max(...filteredData.map(row => 
-        parseInt(row['median_discretionary_income'])
+        parseInt(row['median_discretionary_income']) || 0
     ));
+    console.log('[updateTable] highest discretionary income:', highestDiscretionary);
 
     filteredData.forEach(row => {
         const tr = document.createElement('tr');
         // Add highlight class if this row has the highest discretionary income
-        if (parseInt(row['median_discretionary_income']) === highestDiscretionary) {
+        if ((parseInt(row['median_discretionary_income']) || 0) === highestDiscretionary) {
             tr.classList.add('highlight');
         }
         tr.innerHTML = `
-            <td>${row.rank}</td>
-            <td>${row['city_name']}</td>
-            <td>${row['country']}</td>
+            <td>${row.rank ?? ''}</td>
+            <td>${row['city_name'] ?? ''}</td>
+            <td>${row['country'] ?? ''}</td>
             <td>${formatNumber(row['median_disposable_income'])}</td>
             <td>${formatNumber(row['median_discretionary_income'])}</td>
-            <td>${row['languages_spoken']}</td>
+            <td>${row['languages_spoken'] ? row['languages_spoken'] : ''}</td>
         `;
         tbody.appendChild(tr);
     });
 
     // Reinitialize DataTable
+    if (typeof $ === 'undefined' || !$('#incomeTable').length) {
+        console.warn('[updateTable] DataTables not initialized: missing jQuery or #incomeTable');
+        return;
+    }
     dataTable = $('#incomeTable').DataTable({
         "order": [],
         "pageLength": 50,
@@ -141,25 +199,32 @@ function updateTable(filteredData) {
             { 
                 "targets": [3, 4],
                 "render": function(data, type) {
-                    return type === 'sort' ? 
-                        parseFloat(data.replace(/,/g, '')) : 
-                        data;
+                    if (type === 'sort') {
+                        const numeric = parseFloat(String(data || '').replace(/,/g, ''));
+                        return isNaN(numeric) ? 0 : numeric;
+                    }
+                    return data ?? '';
                 }
             }
         ]
     });
+    console.log('[updateTable] DataTable initialized with', filteredData.length, 'rows');
 }
 
 // Fetch data and populate table
 async function fetchData() {
+    console.log('[fetchData] start');
     try {
         const response = await fetch('data.csv');
+        console.log('[fetchData] response.ok:', response.ok, 'status:', response.status);
         if (!response.ok) {
             throw new Error('Failed to fetch data');
         }
         
         const csvText = await response.text();
+        console.log('[fetchData] csvText length:', csvText.length);
         globalData = parseCSV(csvText);
+        console.log('[fetchData] parsed globalData length:', globalData.length);
         
         // Assign ranks based on discretionary income
         globalData = assignRanks(globalData);
@@ -172,18 +237,29 @@ async function fetchData() {
         updateTable(globalData);
 
         // Add event listener for language filter
-        document.getElementById('languageFilter').addEventListener('change', (e) => {
-            const filteredData = filterByLanguage(e.target.value);
-            updateTable(filteredData);
-        });
+        const languageFilterEl = document.getElementById('languageFilter');
+        if (languageFilterEl) {
+            console.log('[fetchData] attaching change listener to #languageFilter');
+            languageFilterEl.addEventListener('change', (e) => {
+                const filteredData = filterByLanguage(e.target.value);
+                updateTable(filteredData);
+            });
+        } else {
+            console.warn('[fetchData] #languageFilter not found');
+        }
 
     } catch (error) {
         console.error('Error loading data:', error);
-        document.querySelector('table tbody').innerHTML = `
-            <tr>
-                <td colspan="6">Error loading data. Please try again later.</td>
-            </tr>
-        `;
+        const tbody = document.querySelector('table tbody');
+        if (tbody) {
+            tbody.innerHTML = `
+                <tr>
+                    <td colspan="6">Error loading data. Please try again later.</td>
+                </tr>
+            `;
+        } else {
+            console.warn('[fetchData] table tbody not found to show error message');
+        }
     }
 }
 
