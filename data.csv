@@ -1,100 +1,100 @@
 city_name,country,median_disposable_income,median_discretionary_income,languages_spoken
-San Francisco,USA,"97,856","-1,119",English
-Doha,Qatar,"34,970","15,471","Arabic,English"
-Dubai,UAE,"56,360","15,308","Arabic,English"
-Kuwait City,Kuwait,"64,400","17,992","Arabic,English"
-Zurich,Switzerland,"91,080","20,407","German,French,Italian,English"
-Abu Dhabi,UAE,"56,360","16,988","Arabic,English"
-Geneva,Switzerland,"91,080","18,979","French,English,German"
-Seattle,USA,"90,763","2,143",English
-Basel,Switzerland,"91,080","19,899","German,French,English"
-Lausanne,Switzerland,"91,080","20,012","French,German,English"
-Los Angeles,USA,"67,469","4,229","English,Spanish"
-Manama,Bahrain,"58,070","14,810","Arabic,English"
-New York City,USA,"65,971","1,171",English
-Boston,USA,"70,478","2,018",English
-Oslo,Norway,"55,752","14,952","Norwegian,English"
-Austin,USA,"65,299","8,299","English,Spanish"
-Copenhagen,Denmark,"49,850","12,170","Danish,English"
-Muscat,Oman,"35,000","14,500","Arabic,English"
-Bergen,Norway,"55,752","15,452","Norwegian,English"
-Chicago,USA,"58,992","9,192",English
-Denver,USA,"61,845","8,805",English
-Riyadh,Saudi Arabia,"64,598","18,561","Arabic,English"
-Sydney,Australia,"52,296","9,816",English
-London,UK,"45,486","6,006",English
-Perth,Australia,"52,296","11,256",English
-Portland,USA,"60,150","9,150",English
-Melbourne,Australia,"52,296","10,176",English
-Toronto,Canada,"45,345","5,865","English,French"
-Stockholm,Sweden,"44,638","11,878","Swedish,English"
-Miami,USA,"55,400","5,000","English,Spanish"
-Calgary,Canada,"45,345","8,145","English,French"
-Jeddah,Saudi Arabia,"64,598","19,898","Arabic,English"
-Singapore,Singapore,"61,500","10,260","English,Mandarin,Malay,Tamil"
-Vancouver,Canada,"45,345","4,305","English,French"
-Munich,Germany,"51,700","13,852",German
-Ottawa,Canada,"45,345","9,585","English,French"
-Amsterdam,Netherlands,"50,920","8,740","Dutch,English"
-Berlin,Germany,"51,700","12,940",German
-Edmonton,Canada,"45,345","9,945","English,French"
-Gothenburg,Sweden,"44,638","12,518","Swedish,English"
-Helsinki,Finland,"45,700","11,500","Finnish,Swedish"
-Auckland,New Zealand,"39,937","6,337","English,Maori"
-Montreal,Canada,"45,345","10,905","English,French"
-Paris,France,"48,072","7,872",French
-Vienna,Austria,"51,136","14,536",German
-Dublin,Ireland,"42,826","5,386","English,Irish"
-Wellington,New Zealand,"39,937","7,417","English,Maori"
-Hamburg,Germany,"51,700","13,420",German
-Edinburgh,UK,"45,486","7,806",English
-Christchurch,New Zealand,"39,937","8,737","English,Maori"
-Quebec City,Canada,"45,345","12,225","French,English"
-Malmö,Sweden,"44,638","13,438","Swedish,English"
-Hong Kong,China,"48,500","7,940","Cantonese,English,Mandarin"
-Tokyo,Japan,"38,010","9,210",Japanese
-Rotterdam,Netherlands,"50,920","10,480","Dutch,English"
-Brussels,Belgium,"49,749","10,509","Dutch,French,German"
-Tel Aviv,Israel,"39,500","4,820","Hebrew,English"
-Manchester,UK,"45,486","10,686",English
-Lyon,France,"48,072","10,872",French
-Glasgow,UK,"45,486","11,886",English
-Jerusalem,Israel,"39,500","6,020","Hebrew,Arabic,English"
-Marseille,France,"48,072","11,472",French
-Haifa,Israel,"39,500","8,300","Hebrew,Arabic,English"
-Osaka,Japan,"38,010","10,410",Japanese
-Milan,Italy,"43,390","8,590",Italian
-Kyoto,Japan,"38,010","10,810",Japanese
-Seoul,South Korea,"35,083","7,483",Korean
-Madrid,Spain,"39,965","13,565",Spanish
-Busan,South Korea,"35,083","9,883",Korean
-Barcelona,Spain,"39,965","12,765","Spanish,Catalan"
-Rome,Italy,"43,390","9,790",Italian
-Lisbon,Portugal,"36,242","12,642",Portuguese
-Ljubljana,Slovenia,"35,273","14,073",Slovenian
-Prague,Czech Republic,"38,146","15,746",Czech
-Tallinn,Estonia,"30,354","11,754","Estonian,Russian"
-Warsaw,Poland,"33,089","14,489",Polish
-Zagreb,Croatia,"25,000","9,400",Croatian
-Moscow,Russia,"18,000","5,400",Russian
-Shanghai,China,"6,930","1,530",Mandarin
-Budapest,Hungary,"33,330","13,530",Hungarian
-Riga,Latvia,"25,883","9,683","Latvian,Russian"
-Shenzhen,China,"6,930","1,650",Mandarin
-Bucharest,Romania,"19,500","7,620",Romanian
-Kuala Lumpur,Malaysia,"12,500","5,300","Malay,English"
-Guangzhou,China,"6,930","2,130","Mandarin,Cantonese"
-Athens,Greece,"31,164","10,124",Greek
-Santiago,Chile,"23,899","8,299",Spanish
-Belgrade,Serbia,"12,000","4,200",Serbian
-Beijing,China,"6,930","1,290",Mandarin
-Cape Town,South Africa,"7,200",360,"English,Afrikaans,Xhosa"
-Mexico City,Mexico,"9,800",188,Spanish
-Istanbul,Turkey,"8,900",108,Turkish
-São Paulo,Brazil,"8,500",250,Portuguese
-Bangkok,Thailand,"7,500",300,Thai
-Buenos Aires,Argentina,"6,500",-285,Spanish
-Mumbai,India,"3,300",-552,"Hindi,Marathi,English"
-Jakarta,Indonesia,"4,450",-782,Indonesian
-Kiev,Ukraine,"4,000",400,"Ukrainian,Russian"
-Manila,Philippines,"4,200",-840,"Filipino,English"
+San Francisco,USA,97856,-1119,English
+Doha,Qatar,34970,15471,"Arabic,English"
+Dubai,UAE,56360,15308,"Arabic,English"
+Kuwait City,Kuwait,64400,17992,"Arabic,English"
+Zurich,Switzerland,91080,20407,"German,French,Italian,English"
+Abu Dhabi,UAE,56360,16988,"Arabic,English"
+Geneva,Switzerland,91080,18979,"French,English,German"
+Seattle,USA,90763,2143,English
+Basel,Switzerland,91080,19899,"German,French,English"
+Lausanne,Switzerland,91080,20012,"French,German,English"
+Los Angeles,USA,67469,4229,"English,Spanish"
+Manama,Bahrain,58070,14810,"Arabic,English"
+New York City,USA,65971,1171,English
+Boston,USA,70478,2018,English
+Oslo,Norway,55752,14952,"Norwegian,English"
+Austin,USA,65299,8299,"English,Spanish"
+Copenhagen,Denmark,49850,12170,"Danish,English"
+Muscat,Oman,35000,14500,"Arabic,English"
+Bergen,Norway,55752,15452,"Norwegian,English"
+Chicago,USA,58992,9192,English
+Denver,USA,61845,8805,English
+Riyadh,Saudi Arabia,64598,18561,"Arabic,English"
+Sydney,Australia,52296,9816,English
+London,UK,45486,6006,English
+Perth,Australia,52296,11256,English
+Portland,USA,60150,9150,English
+Melbourne,Australia,52296,10176,English
+Toronto,Canada,45345,5865,"English,French"
+Stockholm,Sweden,44638,11878,"Swedish,English"
+Miami,USA,55400,5000,"English,Spanish"
+Calgary,Canada,45345,8145,"English,French"
+Jeddah,Saudi Arabia,64598,19898,"Arabic,English"
+Singapore,Singapore,61500,10260,"English,Mandarin,Malay,Tamil"
+Vancouver,Canada,45345,4305,"English,French"
+Munich,Germany,51700,13852,German
+Ottawa,Canada,45345,9585,"English,French"
+Amsterdam,Netherlands,50920,8740,"Dutch,English"
+Berlin,Germany,51700,12940,German
+Edmonton,Canada,45345,9945,"English,French"
+Gothenburg,Sweden,44638,12518,"Swedish,English"
+Helsinki,Finland,45700,11500,"Finnish,Swedish"
+Auckland,New Zealand,39937,6337,"English,Maori"
+Montreal,Canada,45345,10905,"English,French"
+Paris,France,48072,7872,French
+Vienna,Austria,51136,14536,German
+Dublin,Ireland,42826,5386,"English,Irish"
+Wellington,New Zealand,39937,7417,"English,Maori"
+Hamburg,Germany,51700,13420,German
+Edinburgh,UK,45486,7806,English
+Christchurch,New Zealand,39937,8737,"English,Maori"
+Quebec City,Canada,45345,12225,"French,English"
+Malmö,Sweden,44638,13438,"Swedish,English"
+Hong Kong,China,48500,7940,"Cantonese,English,Mandarin"
+Tokyo,Japan,38010,9210,Japanese
+Rotterdam,Netherlands,50920,10480,"Dutch,English"
+Brussels,Belgium,49749,10509,"Dutch,French,German"
+Tel Aviv,Israel,39500,4820,"Hebrew,English"
+Manchester,UK,45486,10686,English
+Lyon,France,48072,10872,French
+Glasgow,UK,45486,11886,English
+Jerusalem,Israel,39500,6020,"Hebrew,Arabic,English"
+Marseille,France,48072,11472,French
+Haifa,Israel,39500,8300,"Hebrew,Arabic,English"
+Osaka,Japan,38010,10410,Japanese
+Milan,Italy,43390,8590,Italian
+Kyoto,Japan,38010,10810,Japanese
+Seoul,South Korea,35083,7483,Korean
+Madrid,Spain,39965,13565,Spanish
+Busan,South Korea,35083,9883,Korean
+Barcelona,Spain,39965,12765,"Spanish,Catalan"
+Rome,Italy,43390,9790,Italian
+Lisbon,Portugal,36242,12642,Portuguese
+Ljubljana,Slovenia,35273,14073,Slovenian
+Prague,Czech Republic,38146,15746,Czech
+Tallinn,Estonia,30354,11754,"Estonian,Russian"
+Warsaw,Poland,33089,14489,Polish
+Zagreb,Croatia,25000,9400,Croatian
+Moscow,Russia,18000,5400,Russian
+Shanghai,China,6930,1530,Mandarin
+Budapest,Hungary,33330,13530,Hungarian
+Riga,Latvia,25883,9683,"Latvian,Russian"
+Shenzhen,China,6930,1650,Mandarin
+Bucharest,Romania,19500,7620,Romanian
+Kuala Lumpur,Malaysia,12500,5300,"Malay,English"
+Guangzhou,China,6930,2130,"Mandarin,Cantonese"
+Athens,Greece,31164,10124,Greek
+Santiago,Chile,23899,8299,Spanish
+Belgrade,Serbia,12000,4200,Serbian
+Beijing,China,6930,1290,Mandarin
+Cape Town,South Africa,7200,360,"English,Afrikaans,Xhosa"
+Mexico City,Mexico,9800,188,Spanish
+Istanbul,Turkey,8900,108,Turkish
+São Paulo,Brazil,8500,250,Portuguese
+Bangkok,Thailand,7500,300,Thai
+Buenos Aires,Argentina,6500,-285,Spanish
+Mumbai,India,3300,-552,"Hindi,Marathi,English"
+Jakarta,Indonesia,4450,-782,Indonesian
+Kiev,Ukraine,4000,400,"Ukrainian,Russian"
+Manila,Philippines,4200,-840,"Filipino,English"
