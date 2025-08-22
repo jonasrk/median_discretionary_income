@@ -1,100 +1,100 @@
 city_name,country,median_disposable_income,median_discretionary_income,languages_spoken
-San Francisco,USA,97856,-1119,English
+Abu Dhabi,UAE,56360,16988,"Arabic,English"
+Amsterdam,Netherlands,50920,8740,"Dutch,English"
+Athens,Greece,31164,10124,"Greek"
+Auckland,New Zealand,39937,6337,"English,Maori"
+Austin,USA,65299,8299,"English,Spanish"
+Bangkok,Thailand,7500,300,"Thai"
+Barcelona,Spain,39965,12765,"Spanish,Catalan"
+Basel,Switzerland,91080,19899,"German,French,English"
+Beijing,China,6930,1290,"Mandarin"
+Belgrade,Serbia,12000,4200,"Serbian"
+Bergen,Norway,55752,15452,"Norwegian,English"
+Berlin,Germany,51700,12940,"German"
+Boston,USA,70478,2018,"English"
+Brussels,Belgium,49749,10509,"Dutch,French,German"
+Bucharest,Romania,19500,7620,"Romanian"
+Budapest,Hungary,33330,13530,"Hungarian"
+Buenos Aires,Argentina,6500,-285,"Spanish"
+Busan,South Korea,35083,9883,"Korean"
+Calgary,Canada,45345,8145,"English,French"
+Cape Town,South Africa,7200,360,"English,Afrikaans,Xhosa"
+Chicago,USA,58992,9192,"English"
+Christchurch,New Zealand,39937,8737,"English,Maori"
+Copenhagen,Denmark,49850,12170,"Danish,English"
+Denver,USA,61845,8805,"English"
 Doha,Qatar,34970,15471,"Arabic,English"
 Dubai,UAE,56360,15308,"Arabic,English"
-Kuwait City,Kuwait,64400,17992,"Arabic,English"
-Zurich,Switzerland,91080,20407,"German,French,Italian,English"
-Abu Dhabi,UAE,56360,16988,"Arabic,English"
-Geneva,Switzerland,91080,18979,"French,English,German"
-Seattle,USA,90763,2143,English
-Basel,Switzerland,91080,19899,"German,French,English"
-Lausanne,Switzerland,91080,20012,"French,German,English"
-Los Angeles,USA,67469,4229,"English,Spanish"
-Manama,Bahrain,58070,14810,"Arabic,English"
-New York City,USA,65971,1171,English
-Boston,USA,70478,2018,English
-Oslo,Norway,55752,14952,"Norwegian,English"
-Austin,USA,65299,8299,"English,Spanish"
-Copenhagen,Denmark,49850,12170,"Danish,English"
-Muscat,Oman,35000,14500,"Arabic,English"
-Bergen,Norway,55752,15452,"Norwegian,English"
-Chicago,USA,58992,9192,English
-Denver,USA,61845,8805,English
-Riyadh,Saudi Arabia,64598,18561,"Arabic,English"
-Sydney,Australia,52296,9816,English
-London,UK,45486,6006,English
-Perth,Australia,52296,11256,English
-Portland,USA,60150,9150,English
-Melbourne,Australia,52296,10176,English
-Toronto,Canada,45345,5865,"English,French"
-Stockholm,Sweden,44638,11878,"Swedish,English"
-Miami,USA,55400,5000,"English,Spanish"
-Calgary,Canada,45345,8145,"English,French"
-Jeddah,Saudi Arabia,64598,19898,"Arabic,English"
-Singapore,Singapore,61500,10260,"English,Mandarin,Malay,Tamil"
-Vancouver,Canada,45345,4305,"English,French"
-Munich,Germany,51700,13852,German
-Ottawa,Canada,45345,9585,"English,French"
-Amsterdam,Netherlands,50920,8740,"Dutch,English"
-Berlin,Germany,51700,12940,German
-Edmonton,Canada,45345,9945,"English,French"
-Gothenburg,Sweden,44638,12518,"Swedish,English"
-Helsinki,Finland,45700,11500,"Finnish,Swedish"
-Auckland,New Zealand,39937,6337,"English,Maori"
-Montreal,Canada,45345,10905,"English,French"
-Paris,France,48072,7872,French
-Vienna,Austria,51136,14536,German
 Dublin,Ireland,42826,5386,"English,Irish"
-Wellington,New Zealand,39937,7417,"English,Maori"
-Hamburg,Germany,51700,13420,German
-Edinburgh,UK,45486,7806,English
-Christchurch,New Zealand,39937,8737,"English,Maori"
-Quebec City,Canada,45345,12225,"French,English"
-Malmö,Sweden,44638,13438,"Swedish,English"
-Hong Kong,China,48500,7940,"Cantonese,English,Mandarin"
-Tokyo,Japan,38010,9210,Japanese
-Rotterdam,Netherlands,50920,10480,"Dutch,English"
-Brussels,Belgium,49749,10509,"Dutch,French,German"
-Tel Aviv,Israel,39500,4820,"Hebrew,English"
-Manchester,UK,45486,10686,English
-Lyon,France,48072,10872,French
-Glasgow,UK,45486,11886,English
-Jerusalem,Israel,39500,6020,"Hebrew,Arabic,English"
-Marseille,France,48072,11472,French
-Haifa,Israel,39500,8300,"Hebrew,Arabic,English"
-Osaka,Japan,38010,10410,Japanese
-Milan,Italy,43390,8590,Italian
-Kyoto,Japan,38010,10810,Japanese
-Seoul,South Korea,35083,7483,Korean
-Madrid,Spain,39965,13565,Spanish
-Busan,South Korea,35083,9883,Korean
-Barcelona,Spain,39965,12765,"Spanish,Catalan"
-Rome,Italy,43390,9790,Italian
-Lisbon,Portugal,36242,12642,Portuguese
-Ljubljana,Slovenia,35273,14073,Slovenian
-Prague,Czech Republic,38146,15746,Czech
-Tallinn,Estonia,30354,11754,"Estonian,Russian"
-Warsaw,Poland,33089,14489,Polish
-Zagreb,Croatia,25000,9400,Croatian
-Moscow,Russia,18000,5400,Russian
-Shanghai,China,6930,1530,Mandarin
-Budapest,Hungary,33330,13530,Hungarian
-Riga,Latvia,25883,9683,"Latvian,Russian"
-Shenzhen,China,6930,1650,Mandarin
-Bucharest,Romania,19500,7620,Romanian
-Kuala Lumpur,Malaysia,12500,5300,"Malay,English"
+Edinburgh,UK,45486,7806,"English"
+Edmonton,Canada,45345,9945,"English,French"
+Geneva,Switzerland,91080,18979,"French,English,German"
+Glasgow,UK,45486,11886,"English"
+Gothenburg,Sweden,44638,12518,"Swedish,English"
 Guangzhou,China,6930,2130,"Mandarin,Cantonese"
-Athens,Greece,31164,10124,Greek
-Santiago,Chile,23899,8299,Spanish
-Belgrade,Serbia,12000,4200,Serbian
-Beijing,China,6930,1290,Mandarin
-Cape Town,South Africa,7200,360,"English,Afrikaans,Xhosa"
-Mexico City,Mexico,9800,188,Spanish
-Istanbul,Turkey,8900,108,Turkish
-São Paulo,Brazil,8500,250,Portuguese
-Bangkok,Thailand,7500,300,Thai
-Buenos Aires,Argentina,6500,-285,Spanish
-Mumbai,India,3300,-552,"Hindi,Marathi,English"
-Jakarta,Indonesia,4450,-782,Indonesian
+Haifa,Israel,39500,8300,"Hebrew,Arabic,English"
+Hamburg,Germany,51700,13420,"German"
+Helsinki,Finland,45700,11500,"Finnish,Swedish"
+Hong Kong,China,48500,7940,"Cantonese,English,Mandarin"
+Istanbul,Turkey,8900,108,"Turkish"
+Jakarta,Indonesia,4450,-782,"Indonesian"
+Jeddah,Saudi Arabia,64598,19898,"Arabic,English"
+Jerusalem,Israel,39500,6020,"Hebrew,Arabic,English"
 Kiev,Ukraine,4000,400,"Ukrainian,Russian"
+Kuala Lumpur,Malaysia,12500,5300,"Malay,English"
+Kuwait City,Kuwait,64400,17992,"Arabic,English"
+Kyoto,Japan,38010,10810,"Japanese"
+Lausanne,Switzerland,91080,20012,"French,German,English"
+Lisbon,Portugal,36242,12642,"Portuguese"
+Ljubljana,Slovenia,35273,14073,"Slovenian"
+London,UK,45486,6006,"English"
+Los Angeles,USA,67469,4229,"English,Spanish"
+Lyon,France,48072,10872,"French"
+Madrid,Spain,39965,13565,"Spanish"
+Malmö,Sweden,44638,13438,"Swedish,English"
+Manama,Bahrain,58070,14810,"Arabic,English"
+Manchester,UK,45486,10686,"English"
 Manila,Philippines,4200,-840,"Filipino,English"
+Marseille,France,48072,11472,"French"
+Melbourne,Australia,52296,10176,"English"
+Mexico City,Mexico,9800,188,"Spanish"
+Miami,USA,55400,5000,"English,Spanish"
+Milan,Italy,43390,8590,"Italian"
+Montreal,Canada,45345,10905,"English,French"
+Moscow,Russia,18000,5400,"Russian"
+Mumbai,India,3300,-552,"Hindi,Marathi,English"
+Munich,Germany,51700,13852,"German"
+Muscat,Oman,35000,14500,"Arabic,English"
+New York City,USA,65971,1171,"English"
+Osaka,Japan,38010,10410,"Japanese"
+Oslo,Norway,55752,14952,"Norwegian,English"
+Ottawa,Canada,45345,9585,"English,French"
+Paris,France,48072,7872,"French"
+Perth,Australia,52296,11256,"English"
+Portland,USA,60150,9150,"English"
+Prague,Czech Republic,38146,15746,"Czech"
+Quebec City,Canada,45345,12225,"French,English"
+Riga,Latvia,25883,9683,"Latvian,Russian"
+Riyadh,Saudi Arabia,64598,18561,"Arabic,English"
+Rome,Italy,43390,9790,"Italian"
+Rotterdam,Netherlands,50920,10480,"Dutch,English"
+San Francisco,USA,97856,-1119,"English"
+Santiago,Chile,23899,8299,"Spanish"
+São Paulo,Brazil,8500,250,"Portuguese"
+Seattle,USA,90763,2143,"English"
+Seoul,South Korea,35083,7483,"Korean"
+Shanghai,China,6930,1530,"Mandarin"
+Shenzhen,China,6930,1650,"Mandarin"
+Singapore,Singapore,61500,10260,"English,Mandarin,Malay,Tamil"
+Stockholm,Sweden,44638,11878,"Swedish,English"
+Sydney,Australia,52296,9816,"English"
+Tallinn,Estonia,30354,11754,"Estonian,Russian"
+Tel Aviv,Israel,39500,4820,"Hebrew,English"
+Tokyo,Japan,38010,9210,"Japanese"
+Toronto,Canada,45345,5865,"English,French"
+Vancouver,Canada,45345,4305,"English,French"
+Vienna,Austria,51136,14536,"German"
+Warsaw,Poland,33089,14489,"Polish"
+Wellington,New Zealand,39937,7417,"English,Maori"
+Zagreb,Croatia,25000,9400,"Croatian"
+Zurich,Switzerland,91080,20407,"German,French,Italian,English"
